@@ -64,6 +64,7 @@
 		974FC78F227BB11B00C94130 = {
 			isa = PBXGroup;
 			children = (
+				974FC7C0227BDD7000C94130 /* README.txt */,
 				974FC79A227BB11B00C94130 /* NGTest */,
 				974FC7AF227BB11C00C94130 /* NGTestTests */,
 				974FC799227BB11B00C94130 /* Products */,
@@ -82,7 +83,6 @@
 		974FC79A227BB11B00C94130 /* NGTest */ = {
 			isa = PBXGroup;
 			children = (
-				974FC7C0227BDD7000C94130 /* README.txt */,
 				974FC7BB227BB1E100C94130 /* Supporting Files */,
 				974FC79B227BB11B00C94130 /* AppDelegate.swift */,
 				974FC79D227BB11B00C94130 /* MainViewController.swift */,
