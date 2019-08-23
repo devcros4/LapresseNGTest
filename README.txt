@@ -6,11 +6,11 @@ L'application doit consister en 2 écrans:
 
 ### Suivre les instructions suivantes :
 * 1 : Utilisez le repo git;
-* 2 : Implémenter le bouton du "Tri" pour que l'usager puisse trier par date ou par « channelName »;
-* 3 : Ajouter la fonctionalité pour filtrer par « ChannelName »;
-* 4 : Supporter les appareils iOS 10 à 12.2
-* 5 : Afficher la liste des manchettes de la manière que vous préférez (CollectionView, TableView, MVVM, MVC, MVP, Viper, ...);
-* 6 : Afficher le contenu d'un article dans un deuxième écran;
+* 2 : Implémenter le bouton du "Tri" pour que l'usager puisse trier par date;
+* 3 : Ajouter la fonctionnalité pour filtrer par « ChannelName »;
+* 4 : Supporter les appareils iOS 10 à 12.4
+* 5 : Afficher la liste des grands titres de la manière que vous préférez (CollectionView, TableView, MVVM, MVC, MVP, Viper...);
+* 6 : Afficher le contenu d'un article dans un deuxième écran.
 
 Sur une base volontaire:
 
