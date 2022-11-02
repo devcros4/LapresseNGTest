@@ -2,9 +2,6 @@
 //  NGTestTests.swift
 //  NGTestTests
 //
-//  Created by Lision, Alexandre on 5/2/19.
-//  Copyright © 2019 Nuglif. All rights reserved.
-//
 
 import XCTest
 @testable import NGTest
@@ -19,10 +16,34 @@ class NGTestTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testJsonDecodeWithCorrectData() {
+        guard let path = Bundle.main.path(forResource: "articles", ofType: "json") else {
+            XCTAssertFalse(true)
+            return }
+            let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+        JsonDecoderService().decode(of: [Article].self, from: data) { result in
+            switch result {
+            case .success(let data):
+                print(data)
+                XCTAssertNotNil(data)
+            case .failure(let error):
+                print(error)
+                XCTAssertNil(error)
+            }
+        }
+        
     }
+    func testJsonDecodeWithIncorrectData() {
+        JsonDecoderService().decode(of: Article.self, from: "error".data(using: .utf8)!) { result in
+            switch result {
+            case .success(let data):
+                XCTAssertNil(data)
+            case .failure(let error):
+                XCTAssertNotNil(error)
+            }
+        }
+    }
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

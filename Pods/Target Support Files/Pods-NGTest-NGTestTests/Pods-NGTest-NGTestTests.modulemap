@@ -1,0 +1,6 @@
+framework module Pods_NGTest_NGTestTests {
+  umbrella header "Pods-NGTest-NGTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
